@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- footer libery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+
+<body>
+    <section>
+        <div class="nav">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="linkitem">
+                <a href="#">home</a>
+                <a href="">place</a>
+                <a href="">about</a>
+                <a href="">gallery</a>
+                <a href="">client</a>
+                <a href="">team</a>
+                <a href="">contact us</a>
+            </div>
+
+        </div>
+    </section>
+    <style>
+        .nav {
+            z-index: 1;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: fixed;
+            background-color: rgb(28, 25, 25);
+            align-items: center;
+
+        }
+
+        .linkitem {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .linkitem a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        .linkitem a:hover {
+            color: orange;
+            transition: all ease 0.5s;
+
+        }
+    </style>
+
+    <section id="hero">
+
+        <h4>Enjoy Vacation With <span style="color: orange;"> V-Travel</span> </h4>
+
+        <p> Travel to the any corner of the world, without going around in circles.</p>
+        <button><b> book a tour</b></button>
+
+
+    </section>
+    <style>
+        #hero {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 90vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top 15% right 0;
+            padding: 0 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #hero h4 {
+            padding-top: 75px;
+            padding-bottom: 25px;
+            font-size: 77px;
+            color: #fff;
+        }
+
+        #hero h1 {
+            color: white;
+
+        }
+
+        #hero h2 {
+            font-size: 30px;
+            /* margin-left: 45px; */
+            color: #fff;
+        }
+
+        #hero p {
+            padding-top: 5px;
+            padding-bottom: 20px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        #hero button {
+            /* background-image: url("img/button.png"); */
+            background-color: orange;
+            border-radius: 20px;
+            align-items: center;
+            margin-left: -100px;
+            color: white;
+            height: 50px;
+            width: 250px;
+            border: 0;
+            padding: 14px 80px 14px 65px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        #hero button:hover {
+            background-color: transparent;
+            border: 2px solid orange;
+            transition: all ease-in-out 0.2s;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("mainbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
+
+
+    <section>
+
+        <div class="popular">
+            <div class="hea">
+                <h1>Popular Tour Places</h1>
+            </div>
+        </div>
+
+    </section>
+    <style>
+        .popular {
+            background-color: #fff;
+
+        }
+
+        .hea {
+         
+
+            margin-left: 100px;
+            font-size: 50px;
+            color: rgb(28, 27, 27);
+        }
+    </style>
+
+    <section>
+        <div>
+            <!-- <h1 style="text-align: center; font-size: 30px; padding-top: 20px; padding-bottom: 20px;" >COURSES </h1> -->
+            <!-- <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <symbol id="icon-cross" viewBox="0 0 32 32">
+                <title>close</title>
+                <path d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/>
+              </symbol>
+            </defs>
+          </svg> -->
+
+            <div class="page" data-modal-state="closed">
+                <div class="container">
+                    <div class="card-slider">
+
+                        <div class="card-wrapper">
+                            <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                <article class="card">
+                                    <picture class="card__background">
+                                        <img src="place1.jpg"
+                                            style="background-size: cover; background-repeat: no-repeat;  " width="400"
+                                            height="300px">
+                                    </picture>
+
+
+
+                                    <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                        <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                        <h3 class="card__title"
+                                            style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            COX'S BAZAR SEA BEACH</h3>
+                                        <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            chitagang bangladesh</p><br>
+                                        <p style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            <span style="color: orange; font-size: 40px;"> $2200</span><del>$3200</del>
+                                        </p>
+                                        <p style="color: black; font-weight: 500;"> </p>
+
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="card-wrapper">
+                            <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                <article class="card">
+                                    <picture class="card__background">
+                                        <img src="place2.jpg"
+                                            style="background-size: cover; background-repeat: no-repeat;  " width="400"
+                                            height="300px">
+                                    </picture>
+
+
+
+                                    <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                        <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                        <h3 class="card__title"
+                                            style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            NICE BUILDING</h3>
+                                        <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; "> dhaka
+                                            bangladesh</p><br>
+                                        <p style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            <span style="color: orange; font-size: 40px;"> $2340</span><del>$3200</del>
+                                        </p>
+                                        <p style="color: black; font-weight: 500;"> </p>
+
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="card-wrapper">
+                            <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                <article class="card">
+                                    <picture class="card__background">
+                                        <img src="place3.jpg"
+                                            style="background-size: cover; background-repeat: no-repeat;  " width="400"
+                                            height="300px">
+                                    </picture>
+
+
+
+                                    <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                        <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                        <h3 class="card__title"
+                                            style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            SUNDORBON BROMON</h3>
+                                        <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            australia</p><br>
+                                        <p style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            <span style="color: orange; font-size: 40px;"> 1290</span><del>$3200</del>
+                                        </p>
+                                        <p style="color: black; font-weight: 500;"> </p>
+
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="card-wrapper">
+                            <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                <article class="card">
+                                    <picture class="card__background">
+                                        <img src="place4.jpg"
+                                            style="background-size: cover; background-repeat: no-repeat;  " width="400"
+                                            height="300px">
+                                    </picture>
+
+
+
+                                    <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                        <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                        <h3 class="card__title"
+                                            style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            NOOR JAHAN HALL</h3>
+                                        <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            kashmir,india</p><br>
+                                        <p style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            <span style="color: orange; font-size: 40px;"> $2000</span><del>$3200</del>
+                                        </p>
+                                        <p style="color: black; font-weight: 500;"> </p>
+
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <section>
+            <div>
+                <!-- <h1 style="text-align: center; font-size: 30px; padding-top: 20px; padding-bottom: 20px;" >COURSES </h1> -->
+                <!-- <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <symbol id="icon-cross" viewBox="0 0 32 32">
+                      <title>close</title>
+                      <path d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/>
+                    </symbol>
+                  </defs>
+                </svg> -->
+
+                <div class="page" data-modal-state="closed" style="margin-top: 100px;">
+                    <div class="container">
+                        <div class="card-slider">
+
+                            <div class="card-wrapper">
+                                <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                    <article class="card">
+                                        <picture class="card__background">
+                                            <img src="c1.png"
+                                                style="background-size: cover;background-repeat: no-repeat;  "
+                                                width="250" height="250px">
+                                        </picture>
+
+
+
+                                        <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                            <p style="color: black; font-weight: 500; color: transparent;"> </p><br>
+
+                                            <h3 class="card__title"
+                                                style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            </h3>
+                                            <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            </p>
+                                            <p
+                                                style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            </p>
+                                            <p style="color: black; font-weight: 500;"> </p>
+
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <div class="card-wrapper">
+                                <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                    <article class="card">
+                                        <picture class="card__background">
+                                            <img src="c2.png"
+                                                style="background-size: cover;background-repeat: no-repeat;  "
+                                                width="250" height="250px">
+                                        </picture>
+
+
+
+                                        <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                            <p style="color: black; font-weight: 500; color: transparent;"> </p><br>
+
+                                            <h3 class="card__title"
+                                                style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            </h3>
+                                            <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            </p>
+                                            <p
+                                                style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            </p>
+                                            <p style="color: black; font-weight: 500;"> </p>
+
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <div class="card-wrapper">
+                                <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                    <article class="card">
+                                        <picture class="card__background">
+                                            <img src="c3.png"
+                                                style="background-size: cover;background-repeat: no-repeat;  "
+                                                width="250" height="250px">
+                                        </picture>
+
+
+
+                                        <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                            <p style="color: black; font-weight: 500; color: transparent;"> </p><br>
+
+                                            <h3 class="card__title"
+                                                style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            </h3>
+                                            <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            </p>
+                                            <p
+                                                style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            </p>
+                                            <p style="color: black; font-weight: 500;"> </p>
+
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <div class="card-wrapper">
+                                <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                    <article class="card">
+                                        <picture class="card__background">
+                                            <img src="c4.png"
+                                                style="background-size: cover;background-repeat: no-repeat;  "
+                                                width="250" height="250px">
+                                        </picture>
+
+
+
+                                        <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                            <p style="color: black; font-weight: 500; color: transparent;"> </p><br>
+
+                                            <h3 class="card__title"
+                                                style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            </h3>
+                                            <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            </p>
+                                            <p
+                                                style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            </p>
+                                            <p style="color: black; font-weight: 500;"> </p>
+
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <div class="card-wrapper">
+                                <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                    <article class="card">
+                                        <picture class="card__background">
+                                            <img src="c5.png"
+                                                style="background-size: cover;background-repeat: no-repeat;  "
+                                                width="250" height="250px">
+                                        </picture>
+
+
+
+                                        <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                            <p style="color: black; font-weight: 500; color: transparent;"> </p><br>
+
+                                            <h3 class="card__title"
+                                                style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            </h3>
+                                            <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            </p>
+                                            <p
+                                                style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            </p>
+                                            <p style="color: black; font-weight: 500;"> </p>
+
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+
+                            <div class="card-wrapper">
+                                <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                                    <article class="card">
+                                        <picture class="card__background">
+                                            <img src="c6.png"
+                                                style="background-size: cover;background-repeat: no-repeat;  "
+                                                width="250" height="250px">
+                                        </picture>
+
+
+
+                                        <div class="card__duration" style="margin-left: 10px; font-size: 20px;">
+                                            <p style="color: black; font-weight: 500; color: transparent;"> </p><br>
+
+                                            <h3 class="card__title"
+                                                style="margin-left: 10px; font-weight: 900; font-size: 20px; color: black; margin-top: 25px;">
+                                            </h3>
+                                            <p style="color: rgb(79, 78, 78); font-weight: 500; margin-left: 10px; ">
+                                            </p>
+                                            <p
+                                                style="color: black; font-weight: 500; margin-top: -40px; margin-left: 5px;">
+                                            </p>
+                                            <p style="color: black; font-weight: 500;"> </p>
+
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <style>
+            .page[data-modal-state="open"] {
+                overflow: hidden;
+            }
+
+            .page {
+                background-color: #fff;
+                margin-top: -08px;
+            }
+
+            .card-slider {
+                display: flex;
+                flex-wrap: nowrap;
+                /* overflow-x: scroll; */
+                -webkit-overflow-scrolling: touch;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                margin-left: -1rem;
+                margin-right: -1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                /* background-color: #1abc9c; */
+            }
+
+            .card-wrapper {
+                flex-shrink: 0;
+                width: calc(100% - 2rem);
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            .card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0.75rem;
+                overflow: hidden;
+                cursor: pointer;
+                transition: box-shadow 0.2s ease-in-out;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .card:hover {
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.636);
+            }
+
+            .card__background {
+                display: block;
+                width: 50%;
+                height: 0;
+                padding-bottom: 66.666%;
+                background-position: center;
+                background-size: cover;
+
+            }
+
+            .card__category {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                padding: 0.25rem 0.5rem;
+                font-size: 0.75rem;
+                font-weight: 700;
+                color: #fff;
+                background-color: #007bff;
+                border-radius: 0.25rem;
+                text-transform: uppercase;
+            }
+
+            .card__title {
+                margin-top: auto;
+                margin-bottom: 0.5rem;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+
+            .card__duration {
+                margin-bottom: 1rem;
+                font-size: 0.875rem;
+                color: #6c757d;
+            }
+
+            .overlay {
+                position: fixed;
+                z-index: 9998;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                pointer-events: none;
+            }
+
+            .modal-wrapper {
+                position: fixed;
+                z-index: 9999;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                pointer-events: none;
+            }
+
+            .modal {
+                position: relative;
+                width: 90%;
+                max-width: 36rem;
+                margin: auto;
+                border-radius: 0.75rem;
+                background-color: #fff;
+                overflow: hidden;
+                pointer-events: all;
+            }
+
+            .modal__close-button {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 0;
+                font-size: 2rem;
+                color: #6c757d;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            .modal__scroll-area {
+                position: relative;
+                max-height: calc(100vh - 10rem);
+                overflow-y: auto;
+                padding: 2rem;
+            }
+
+            .modal__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+
+            .modal__title {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .modal__body {
+                margin-bottom: 2rem;
+            }
+
+            .modal__footer {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .modal__button {
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 0.25rem;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out;
+            }
+
+            .modal__button:hover {
+                background-color: #0069d9;
+            }
+
+            /* @media (max-width: 768px) {
+.card-slider {
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+overflow-x: auto;
+}
+
+.card-wrapper {
+width: calc(50% - 1rem);
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+}
+} */
+
+            /* @media (max-width: 767px) { */
+            /* Center card slider on smaller screens */
+            /* .card-slider {
+margin-left: auto;
+margin-right: auto;
+}
+
+} */
+
+            /* @media (min-width: 768px) { */
+            /* Align card slider to the left on larger screens */
+            /* .card-slider {
+margin-left: 0;
+margin-right: auto;
+}
+} */
+
+            @media screen and (max-width: 576px) {
+
+                .modal {
+                    width: 100%;
+                    border-radius: 0;
+                    margin: 0;
+                    max-height: 100vh;
+                }
+
+                .modal__close-button {
+                    top: 0.5rem;
+                    right: 0.5rem;
+                }
+
+                .modal__scroll-area {
+                    padding: 1rem;
+                }
+            }
+        </style>
+
+    </section>
+  
+
+
+
+
+
+    <section>
+
+        <div class="abo">
+            <div class="headiii">
+                <h1>Who We Are?</h1>
+            </div>
+            <div class="blog">
+                <div class="imm">
+                    <img src="about.jpg" alt="" width="500px" height="300px">
+                </div>
+                <div class="aboutus">
+                    <div class="abouhead">
+                        <h1>We Are Travel Experts</h1>
+                    </div>
+                    <div class="aboutpara">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English. Many desktop publishing packages and web page
+                            editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                            uncover many web sites still in their infancy. Various versions have evolved over the years,
+                            sometimes by accident, sometimes on purpose.</p>
+                    </div>
+                    <div class="aboubtn">
+                        <button>learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<style>
+    .abo{
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .blog{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: start;
+
+    }
+    .blog .imm{
+      margin-left: -600px;
+    }
+    .blog .aboutus{
+        margin-left: 800px;
+        margin-top: -300px;
+    }
+    .blog .aboutpara p{
+        width: 70%;
+    }
+    .blog button{
+        background-color: orange;
+        color: white;
+        border: 2px solid orange;
+        font-weight: 600;
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+    }
+    .blog button:hover{
+        background-color: transparent;
+        color: black;
+        transition: all ease 0.5s;
+    }
+</style>
+
+
+
+
+
+    </section>
+
+
+<section>
+
+    <div class="service">
+        <div class="ii1">
+            <img src="ii1.jpg" alt="">
+        </div>
+        <div class="ii2">
+            <img src="ii2.jpg" alt="">
+        </div>
+        <div class="ii3">
+            <img src="ii3.jpg" alt="">
+        </div>
+        <div class="ii4">
+            <img src="ii4.jpg" alt="">
+        </div>
+        <div class="ii5">
+            <img src="ii5.jpg" alt="">
+        </div>
+        <div class="ii6">
+            <img src="ii6.jpg" alt="">
+        </div>
+    </div>
+</section>
+<style>
+    .service{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        
+        width: 80%;
+       margin-left: 200px;
+       margin-top: 100px;
+    }
+    .ii1{
+        padding-top: 10px;
+    }
+    
+    .ii2{
+        padding-top: 10px;
+    }
+    .ii3{
+        padding-top: 10px;
+    }
+    .ii4{
+        padding-top: 30px;
+    }
+    .ii5{
+        padding-top: 30px;
+    }
+    .ii6{
+        padding-top: 30px;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="yyyy">
+    <div class="youimg">
+        <img src="youtube.jpg" alt="">
+    </div>
+    <div class="ma">
+    <div class="ybtn">
+        <button><img src="play-removebg-preview.png" alt=""></button>
+    </div>
+    <div class="playabout">
+        <h1 style="color: white;" >Travelling Highlights</h1>
+    </div>
+</div>
+</section>
+
+<style>
+    #yyyy{
+        margin-top: 100px;
+    }
+    .youimg{
+        position: relative;
+        z-index: -1;
+    }
+    .youimg img{
+        height: 100vh;
+        width: 100vw;
+        
+    }
+.ma{
+    margin-top: -735px;
+    /* margin-left: 33%; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.ma .ybtn button{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border-color: transparent;
+    align-items: center;
+    margin-top: 250px;
+}
+.ma .ybtn button img{
+
+    margin-left: 25px;
+}
+</style>
+
+
+<section >
+
+    <h1 style="margin-top: 100px; margin-bottom: 100px; margin-left: 44vw;">Tour Gallery</h1>
+    <div class="gallery">
+        <div class="tour">
+          <img src="gal1.jpg" alt="Santorini, Greece">
+          <div class="tour-overlay">
+            <h3>Santorini, Greece</h3>
+            <p>Explore the serene sights of Santorini</p>
+          </div>
+        </div>
+        
+        <div class="tour">
+          <img src="gal2.jpg" alt="Paris, France">
+          <div class="tour-overlay">
+            <h3>Paris, France</h3>
+            <p>Discover the enchantment of the City of Love</p>
+          </div>
+        </div>
+        
+        <div class="tour">
+          <img src="gal3.jpg" alt="Tokyo, Japan">
+          <div class="tour-overlay">
+            <h3>Tokyo, Japan</h3>
+            <p>Experience the vibrant blend of tradition and modernity</p>
+          </div>
+        </div>
+        <div class="tour">
+            <img src="gal4.jpg" alt="Tokyo, Japan">
+            <div class="tour-overlay">
+              <h3>Tokyo, Japan</h3>
+              <p>Experience the vibrant blend of tradition and modernity</p>
+            </div>
+          </div>
+          <div class="tour">
+            <img src="gal1.jpg" alt="Tokyo, Japan">
+            <div class="tour-overlay">
+              <h3>Tokyo, Japan</h3>
+              <p>Experience the vibrant blend of tradition and modernity</p>
+            </div>
+          </div>
+          <div class="tour">
+            <img src="gal2.jpg" alt="Tokyo, Japan">
+            <div class="tour-overlay">
+              <h3>Tokyo, Japan</h3>
+              <p>Experience the vibrant blend of tradition and modernity</p>
+            </div>
+          </div>
+        <!-- Add more tours here -->
+     <style>
+        .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  /* margin-left: 300px ; */
+}
+
+.tour {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.tour img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tour-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tour:hover img {
+  transform: scale(1.1);
+}
+
+.tour:hover .tour-overlay {
+  opacity: 1;
+}
+
+.tour h3, .tour p {
+  margin: 0;
+}
+
+.tour h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tour p {
+  font-size: 16px;
+}
+
+     </style>    
+</section>
+
+<section style="margin-top: 100px; ">
+    <div>
+        <!-- <h1 style="text-align: center; font-size: 30px; padding-top: 20px; padding-bottom: 20px;" >COURSES </h1> -->
+        <!-- <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <symbol id="icon-cross" viewBox="0 0 32 32">
+            <title>close</title>
+            <path d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/>
+          </symbol>
+        </defs>
+      </svg> -->
+
+        <div class="page" data-modal-state="closed" style="background-color: orange;">
+            <div class="container" style="background-color: orange;">
+                <div class="card-slider">
+
+                    <div class="card-wrapper" style="background-color: orange;">
+                        <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                            <article class="card" style="border: none; background-color: orange;">
+                                <picture class="card__background" style="background-color: orange; width: 100%; ">
+                                    <img src="comment1.jpg"
+                                        style="background-size: cover; background-repeat: no-repeat;  margin-left: 10px;margin-top: 50px; position: absolute; " width="300"
+                                        height="200px">
+                                </picture>
+
+
+
+                                <div class="card__duration" style=" font-size: 20px; background-color: orange;">
+                                    <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                    <h3 class="card__title"
+                                        style="margin-top: -70px; margin-left: 10px; font-weight: 900; font-size: 20px; color: white; margin-top: 25px;">
+                                        JONATHONE DOE</h3>
+                                    <p style="color: white; font-weight: 500; margin-left: 10px; ">
+                                        business man</p><br>
+                                    
+
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    
+                    <div class="card-wrapper" style="background-color: orange;">
+                        <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                            <article class="card" style="border: none; background-color: orange;">
+                                <picture class="card__background" style="background-color: orange; width: 100%; ">
+                                    <img src="comment1.jpg"
+                                        style="background-size: cover; background-repeat: no-repeat;  margin-left: 10px;margin-top: 50px; position: absolute; " width="300"
+                                        height="200px">
+                                </picture>
+
+
+
+                                <div class="card__duration" style=" font-size: 20px; background-color: orange;">
+                                    <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                    <h3 class="card__title"
+                                        style="margin-top: -70px; margin-left: 10px; font-weight: 900; font-size: 20px; color: white; margin-top: 25px;">
+                                        KATRINA KAIF</h3>
+                                    <p style="color: white; font-weight: 500; margin-left: 10px; ">
+                                       actress</p><br>
+                                    
+
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+          
+                    <div class="card-wrapper" style="background-color: orange;">
+                        <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                            <article class="card" style="border: none; background-color: orange;">
+                                <picture class="card__background" style="background-color: orange; width: 100%; ">
+                                    <img src="comment1.jpg"
+                                        style="background-size: cover; background-repeat: no-repeat;  margin-left: 10px;margin-top: 50px; position: absolute; " width="300"
+                                        height="200px">
+                                </picture>
+
+
+
+                                <div class="card__duration" style=" font-size: 20px; background-color: orange;">
+                                    <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                    <h3 class="card__title"
+                                        style="margin-top: -70px; margin-left: 10px; font-weight: 900; font-size: 20px; color: white; margin-top: 25px;">
+                                        JONATHONE DOE</h3>
+                                    <p style="color: white; font-weight: 500; margin-left: 10px; ">
+                                        business man</p><br>
+                                    
+
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+              
+                    <div class="card-wrapper" style="background-color: orange;">
+                        <a href="#" target="_blank" style="text-decoration: none; color: black; ">
+                            <article class="card" style="border: none; background-color: orange;">
+                                <picture class="card__background" style="background-color: orange; width: 100%; ">
+                                    <img src="comment1.jpg"
+                                        style="background-size: cover; background-repeat: no-repeat;  margin-left: 10px;margin-top: 50px; position: absolute; " width="300"
+                                        height="200px">
+                                </picture>
+
+
+
+                                <div class="card__duration" style=" font-size: 20px; background-color: orange;">
+                                    <p style="color: black; font-weight: 500; color: transparent;"> .</p><br>
+
+                                    <h3 class="card__title"
+                                        style="margin-top: -70px; margin-left: 10px; font-weight: 900; font-size: 20px; color: white; margin-top: 25px;">
+                                        JONATHONE DOE</h3>
+                                    <p style="color: white; font-weight: 500; margin-left: 10px; ">
+                                        business man</p><br>
+                                    
+
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        jQuery('.card-slider').slick({
+            slidesToShow: 3,
+            autoplay: true,
+            slidesToScroll: 1,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        let cards = document.querySelectorAll('.card');
+        let card;
+        let modal = document.querySelector('.modal');
+        let closeButton = document.querySelector('.modal__close-button');
+        let page = document.querySelector('.page');
+        const cardBorderRadius = 20;
+        const openingDuration = 600; //ms
+        const closingDuration = 600; //ms
+        const timingFunction = 'cubic-bezier(.76,.01,.65,1.38)';
+
+        var Scrollbar = window.Scrollbar;
+        Scrollbar.init(document.querySelector('.modal__scroll-area'));
+
+
+        function flipAnimation(first, last, options) {
+            let firstRect = first.getBoundingClientRect();
+            let lastRect = last.getBoundingClientRect();
+
+            let deltas = {
+                top: firstRect.top - lastRect.top,
+                left: firstRect.left - lastRect.left,
+                width: firstRect.width / lastRect.width,
+                height: firstRect.height / lastRect.height
+            };
+
+            return last.animate([{
+                transformOrigin: 'top left',
+                borderRadius: `
+${cardBorderRadius / deltas.width}px / ${cardBorderRadius / deltas.height}px`,
+                transform: `
+  translate(${deltas.left}px, ${deltas.top}px) 
+  scale(${deltas.width}, ${deltas.height})
+`
+            }, {
+                transformOrigin: 'top left',
+                transform: 'none',
+                borderRadius: `${cardBorderRadius}px`
+            }], options);
+        }
+
+        cards.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                jQuery('.card-slider').slick('slickPause');
+                card = e.currentTarget;
+                page.dataset.modalState = 'opening';
+                card.classList.add('card--opened');
+                card.style.opacity = 0;
+                document.querySelector('body').classList.add('no-scroll');
+
+                let animation = flipAnimation(card, modal, {
+                    duration: openingDuration,
+                    easing: timingFunction,
+                    fill: 'both'
+                });
+
+                animation.onfinish = () => {
+                    page.dataset.modalState = 'open';
+                    animation.cancel();
+                };
+            });
+        });
+
+        closeButton.addEventListener('click', (e) => {
+            page.dataset.modalState = 'closing';
+            document.querySelector('body').classList.remove('no-scroll');
+
+            let animation = flipAnimation(card, modal, {
+                duration: closingDuration,
+                easing: timingFunction,
+                direction: 'reverse',
+                fill: 'both'
+            });
+
+            animation.onfinish = () => {
+                page.dataset.modalState = 'closed';
+                card.style.opacity = 1;
+                card.classList.remove('card--opened');
+                jQuery('.card-slider').slick('slickPlay');
+                animation.cancel();
+            };
+        });
+    </script>
+
+
+
+
+
+
+
+<div style="background-color: #f2f2f2;">
+    <h1 style="margin-left: 200px;">Professional Team</h1>
+
+
+<div class="imgggg">
+    
+<div class="team-card">
+    <div class="team-image">
+      <img src="team1.jpg" alt="Team Member 1">
+    </div>
+    <div class="team-info">
+      <h3>John Doe</h3>
+      <p>Role: Developer</p>
+      <p>Email: john.doe@example.com</p>
+    </div>
+  </div>
+  
+  <div class="team-card">
+    <div class="team-image">
+      <img src="team2.jpg" alt="Team Member 2">
+    </div>
+    <div class="team-info">
+      <h3>Jane Smith</h3>
+      <p>Role: Designer</p>
+      <p>Email: jane.smith@example.com</p>
+    </div>
+  </div>
+  
+  <div class="team-card">
+    <div class="team-image">
+      <img src="team3.jpg" alt="Team Member 3">
+    </div>
+    <div class="team-info">
+      <h3>Mike Johnson</h3>
+      <p>Role: Marketing</p>
+      <p>Email: mike.johnson@example.com</p>
+    </div>
+  </div>
+</div>
+</div>
+  <!-- Add more team cards here -->
+      <style>
+        .team-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 700px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.team-image {
+    margin-top: 100px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info{
+    margin-top: 50px;
+   
+}
+.team-info {
+  flex-grow: 1;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.team-info p {
+  margin: 5px 0;
+  font-size: 24px;
+}
+.imgggg{
+    /* margin-top: -100px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+}
+      </style>
+</section>
+    
+
+
+<section>
+    
+
+<section id="yyyy">
+    <div class="youimg">
+        <img src="mainbg.jpg" alt="">
+    </div>
+    <div class="ma">
+  
+    <div class="playabout" style="margin-top: 270px;">
+        <h1 style="color: white;" >TAre You Still Intarested To Tour?</h1>
+    </div>
+    <div class="playabout">
+        <p style="color: white;" >We Offer A Wide Range Of Procedures To Help You Get The Perfect Smile</p>
+        
+    </div>
+    <div class="bbb">
+        <button>book a tour </button>
+    </div>
+    
+</div>
+<style>
+  .bbb button{
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+
+    /* border-radius: -20px; */
+  }
+  .bbb button:hover{
+    background-color: transparent;
+    border: 1px solid orange;
+    /* color: black; */
+    transition: all ease-in-out 0.2s;
+  }
+</style>
+</section>
+</section>
+
+
+
+
+
+
+
+<section>
+    <div class="heaquestion" >
+        <h1 style="margin-left: 40px; margin-bottom: 100px;">Question</h1>
+    </div>
+    <div class="iiitem">
+        <div class="iiiques1">
+            <div class="iiiques1img">
+                <p><i class="fas fa-building"></i></p>
+            </div>
+            <div class="ouroffice">
+                <h1>OUR office: </h1>
+                <p>Jurain,Dhaka Bangladesh</p>
+                <input type="text" class="custom-input" placeholder="Enter your name">
+            </div>
+        </div>
+        <div class="iiiques1">
+            <div class="iiiques1img">
+            <p><i class="fas fa-phone"></i></p>
+        </div>
+        <div class="ouroffice">
+            <h1>Contact </h1>
+            <p>+1234321321</p>
+            <input type="email" class="custom-input" placeholder="Email">
+
+        </div></div>
+        <div class="iiiques1">
+            <div class="iiiques1img">
+            <p><i class="fas fa-envelope"></i></p>
+        </div>
+        <div class="ouroffice">
+            <h1>Email </h1>
+            <p>+websitename@mail.com</p>
+            <input type="text" class="custom-input" placeholder="subject">
+
+        </div></div>
+        
+    </div>
+<!-- <input type="text" placeholder="message" style="width: 80%; height: 200px; margin-left: 200px; margin-top: 70px;"> -->
+<textarea class="custom-input">Some text...</textarea>
+<div class="bbb" style="margin-left: 40vw; margin-top: 40px;">
+    <button style="color: black;">send message </button>
+</div>
+<style> 
+/* Assuming you have included the Font Awesome library in the head section of your HTML file */
+
+.office {
+  color: orange;
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 50%;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.office:hover {
+  color: white;
+  background-color: orange;
+}
+
+    textarea {
+      width: 80%;
+      margin-left: 200px;
+      margin-top: 70px;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+    textarea :focus{
+        border-color: orange;
+    }
+    .iiiques1{
+        display: flex;
+    }
+    .iiiques1 p i{
+        /* margin-left: -40px; */
+        margin-top: 25px;
+
+    }
+    </style>
+</section>
+
+<style>
+    .iiiques1img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 50%;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.iiiques1img i {
+  font-size: 24px;
+}
+
+.iiiques1img:hover {
+  color: white;
+  background-color: orange;
+}
+
+    .iiitem{
+        display: flex;
+        width: 80%;
+        margin-left: 200px;
+        justify-content: space-between;
+
+    }
+    .custom-input {
+    outline: none;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .custom-input:focus {
+    border-color: orange;
+  }
+
+  </style>
+
+
+
+
+
+
+<footer>
+    <p>© Copyright | V-Travel 2017. All Rights Reserved.</p>
+  </footer>
+  
+<style>
+    footer {
+        margin-top: 100px;
+  background-color: #161515;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #888;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
